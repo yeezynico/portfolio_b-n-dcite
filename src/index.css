@@ -3,9 +3,24 @@
 @font-face {
   font-family:'New Zen';
   src: url("./assets/fonts/New-Zen-Bold.otf");
-  font-weight: bold;
+  font-weight: 700;
   font-style: normal;
 }
+
+@font-face {
+  font-family:'New Zen';
+  src: url("./assets/fonts/New-Zen-Regular.otf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family:'New Zen';
+  src: url("./assets/fonts/New-Zen-Medium.otf");
+  font-weight: 500;
+  font-style: normal;
+}
+
 @layer base {
   .font-newzen {
     font-family: 'New Zen', sans-serif;
