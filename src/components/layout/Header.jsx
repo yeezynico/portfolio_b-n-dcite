@@ -4,9 +4,9 @@ import star from '../../assets/img/etoile.png'
 
 export const Header = () => {
     return (
-        <header className="flex items-center mt-4 mb-10 mx-8">
+        <header className="flex items-center mt-6 mb-10 mx-10">
             <nav className="flex w-full items-center justify-between">
-                <img src={logo} alt="Bene." className="w-24" />
+                <img src={logo} alt="Bene." className="w-26" />
 
                 <ul className="flex gap-20 text-[#ED9B40] font-newzen font-bold text-xl">
                     <li>Services</li>

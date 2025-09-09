@@ -8,7 +8,7 @@ export const Button = ({
     {...props}
     className={`
       cursor-pointer
-      px-4 py-1 
+      px-6 py-2 
       rounded-xl
       bg-[#ED9B40]  
       font-newzen
@@ -33,11 +33,12 @@ export const ButtonVariant = ({
     {...props}
     className={`
       cursor-pointer
-      px-4 py-1 
+      px-6 py-2 
       rounded-xl
       bg-[#FFFFFF]  
       font-newzen
       font-bold
+      text-2xl
       text-[#ED9B40]
       flex items-center gap-2
       ${fullWidth ? 'w-full' : ''}
