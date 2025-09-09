@@ -2,9 +2,8 @@ import React from 'react'
 
 const Portfolio = () => {
   return (
-    <div>
-        Project
-        Blablabla
+    <div className='bg-gray-200'>
+        Page portfolio en construction
     </div>
   )
 }
