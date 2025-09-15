@@ -1,7 +1,7 @@
 import React from 'react'
 import semisun from '../../assets/img/demi-soleil-creme.png'
 import sun from '../../assets/img/soleilO.png'
-import { Button } from '../ui/Button'
+import { PopupButton } from 'react-calendly'
 
 const Service = () => {
   return (
@@ -46,9 +46,12 @@ const Service = () => {
       </div>
 
       <div className="flex justify-center">
-        <Button onClick={() => alert("Coucou!")}>
-          Réserver votre appel gratuit
-        </Button>
+        <PopupButton
+            url="https://calendly.com/lutetebenedicte/30min"
+            rootElement={document.getElementById("root")}
+            text="Réserver votre appel gratuit"
+            className="bg-[#ED9B40] text-white px-6 py-3 rounded-2xl font-bold hover:bg-[#d9862e] transition font-newzen"
+        />
       </div>
     </div>
   )

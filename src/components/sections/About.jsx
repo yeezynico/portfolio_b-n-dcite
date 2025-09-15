@@ -40,7 +40,7 @@ const About = () => {
         <div className="w-10/12 md:w-3/4 lg:w-2/3 xl:w-1/2 flex flex-col gap-6">
             <div className="flex justify-center">
                 <PopupButton
-                    url="https://calendly.com/esteves-melinda/30min"
+                    url="https://calendly.com/lutetebenedicte/30min"
                     rootElement={document.getElementById("root")}
                     text="Réserver votre appel gratuit"
                     className="bg-[#ED9B40] text-white px-6 py-3 rounded-2xl font-bold hover:bg-[#d9862e] transition font-newzen"

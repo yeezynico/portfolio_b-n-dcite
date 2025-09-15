@@ -1,8 +1,8 @@
 import { useState } from "react"
 import logo from '../../assets/img/logo.png'
-import { Button } from '../ui/Button'
 import star from '../../assets/img/etoile.png'
-import { Menu, X } from "lucide-react" // icônes menu burger
+import { Menu, X } from "lucide-react"
+import { PopupButton } from "react-calendly"
 
 export const Header = () => {
   const [open, setOpen] = useState(false)
@@ -20,9 +20,14 @@ export const Header = () => {
         </ul>
 
         <div className="hidden md:flex items-center gap-2 relative">
-          <img src={star} alt="etoile" className="w-5 h-5 absolute -left-3 -top-2" />
-          <Button>Réservez votre appel gratuit</Button>
-          <img src={star} alt="etoile" className="w-3 h-4 absolute -right-2 -bottom-1" />
+          <img src={star} alt="etoile" className="w-8 h-9 absolute -left-4 -top-3" />
+          <PopupButton
+             url="https://calendly.com/lutetebenedicte/30min"
+             rootElement={document.getElementById("root")}
+             text="Réserver votre appel gratuit"
+             className="bg-[#ED9B40] text-white px-3.5 py-1 rounded-xl text-xl font-bold hover:bg-[#d9862e] transition font-newzen"
+          />
+          <img src={star} alt="etoile" className="w-5 h-6 absolute -right-2 -bottom-3" />
         </div>
 
         <button 
@@ -48,7 +53,12 @@ export const Header = () => {
                 alt="etoile" 
                 className="w-5 h-5 absolute -left-2 -top-1"
                 />
-                <Button>Réservez votre appel gratuit</Button>
+                <PopupButton
+                    url="https://calendly.com/lutetebenedicte/30min"
+                    rootElement={document.getElementById("root")}
+                    text="Réserver votre appel gratuit"
+                    className="bg-[#ED9B40] text-white px-6 py-3 rounded-2xl font-bold hover:bg-[#d9862e] transition font-newzen"
+                />
                 <img 
                 src={star} 
                 alt="etoile" 

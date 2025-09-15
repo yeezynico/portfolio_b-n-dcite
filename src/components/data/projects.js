@@ -1,0 +1,7 @@
+
+
+const projects = [
+    {
+        image: 
+    }    
+]

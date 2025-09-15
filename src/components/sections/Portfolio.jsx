@@ -2,8 +2,10 @@ import React from 'react'
 
 const Portfolio = () => {
   return (
-    <div className='bg-gray-200'>
-        Page portfolio en construction
+    <div className='bg-white'>
+       <div className='bg-[#AA8F66]'>
+
+       </div>
     </div>
   )
 }

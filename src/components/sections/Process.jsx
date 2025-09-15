@@ -1,8 +1,8 @@
 import React from 'react'
 import sun from '../../assets/img/soleil.png'
-import { ButtonVariant } from '../ui/Button'
 import demisun from '../../assets/img/demi-soleil-creme.png'
 import sungroup from '../../assets/img/soleil group.png'
+import { PopupButton } from 'react-calendly'
 
 const Process = () => {
   return (
@@ -45,7 +45,7 @@ const Process = () => {
                 </span>
               </div>
               <h2 className="font-bold text-white text-lg md:text-xl leading-tight">{item.title}</h2>
-              <p className="font-newzen font-medium text-white/95 text-sm leading-6">
+              <p className="font-newzen font-medium text-white/95 text-sm leading-6 mb-5">
                 {item.text}
               </p>
             </div>
@@ -53,18 +53,21 @@ const Process = () => {
         </div>
 
         <div className="flex justify-center mt-10">
-          <ButtonVariant onClick={() => alert("Coucou Poulpi!")}>
-            Prendre votre rendez-vous gratuitement
-          </ButtonVariant>
+          <PopupButton
+              url="https://calendly.com/lutetebenedicte/30min"
+              rootElement={document.getElementById("root")}
+              text="Réserver votre appel gratuit"
+              className="bg-[#FFFFFF] text-[#ED9B40] px-6 py-3 rounded-2xl font-bold hover:bg-[#FFFFFF] transition font-newzen"
+          />
         </div>
 
         <div className="flex justify-center mt-10">
-          <img src={sungroup} alt="groupement de soleils" className="w-3/4 md:w-1/2" />
+          <img src={sungroup} alt="groupement de soleils" className="w-full" />
         </div>
       </div>
 
-      <div className="flex justify-center mt-10">
-        <img src={demisun} alt="soleil décoration" className="w-full md:w-auto max-h-[70vh] object-contain" />
+      <div className="flex justify-center">
+        <img src={demisun} alt="soleil décoration" className="w-full max-h-[90vh] object-contain" />
       </div>
     </div>
   )
