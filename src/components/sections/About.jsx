@@ -1,6 +1,5 @@
 import React from 'react'
 import sunny from '../../assets/img/soleil-orange.png'
-import { Button } from '../ui/Button'
 import { PopupButton } from "react-calendly"
 import photo from '../../assets/img/DymensBeauty - Shoot 2-23 1.png'
 import bgImage from '../../assets/img/quadrillage.png'

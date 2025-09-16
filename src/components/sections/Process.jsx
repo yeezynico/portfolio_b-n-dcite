@@ -57,7 +57,7 @@ const Process = () => {
               url="https://calendly.com/lutetebenedicte/30min"
               rootElement={document.getElementById("root")}
               text="Réserver votre appel gratuit"
-              className="bg-[#FFFFFF] text-[#ED9B40] px-6 py-3 rounded-2xl font-bold hover:bg-[#FFFFFF] transition font-newzen"
+              className="bg-[#FFFFFF] text-[#ED9B40] px-6 py-3 rounded-2xl font-bold hover:bg-[#F6ECDF] transition font-newzen"
           />
         </div>
 

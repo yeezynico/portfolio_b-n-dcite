@@ -1,4 +1,4 @@
-import { Button } from "../ui/Button"
+import { PopupButton } from 'react-calendly'
 import logo from '../../assets/img/logo.png'
 
 export const Footer = () => {
@@ -26,7 +26,12 @@ export const Footer = () => {
                 </div>
 
                 <div className="flex justify-center md:justify-start">
-                    <Button>Prenez votre rendez-vous</Button>
+                    <PopupButton
+                        url="https://calendly.com/lutetebenedicte/30min"
+                        rootElement={document.getElementById("root")}
+                        text="Réserver votre appel gratuit"
+                        className="bg-[#ED9B40] text-white px-3.5 py-1 rounded-xl text-xl font-bold hover:bg-[#d9862e] transition font-newzen"
+                    />
                 </div>
             </div>
             <div className="mt-10 pt-6 border-t border-[#ED9B40]/30 text-center">
