@@ -6,7 +6,7 @@ import { PopupButton } from 'react-calendly'
 
 const Process = () => {
   return (
-    <div className="bg-[#ED9B40] pt-10 w-full bg-cover bg-center relative overflow-hidden">
+    <div id="process" className="bg-[#ED9B40] pt-10 w-full bg-cover bg-center relative overflow-hidden">
       <div className="mt-5 text-white max-w-7xl mx-auto px-6 md:px-12">
         
         <div className="flex items-center justify-center md:justify-start gap-3 mb-10">

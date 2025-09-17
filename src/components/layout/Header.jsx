@@ -14,21 +14,32 @@ export const Header = () => {
         <img src={logo} alt="Bene." className="w-24 md:w-32" />
 
         <ul className="hidden md:flex gap-12 text-[#ED9B40] font-newzen font-bold text-lg md:text-xl">
-          <li>Services</li>
-          <li>Process</li>
-          <li>Portfolio</li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#process">Process</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
         </ul>
 
-        <div className="flex items-center gap-2 relative">
-          <img src={star} alt="etoile" className="w-8 h-9 absolute -left-4 -top-3" />
-            <PopupButton
-                url="https://calendly.com/lutetebenedicte/30min"
-                rootElement={document.getElementById("root")}
-                text="Réserver votre appel gratuit"
-                className="bg-[#ED9B40] text-white px-3.5 py-1 rounded-2xl font-bold hover:bg-[#d9862e] transition font-newzen"
-            />
-          <img src={star} alt="etoile" className="w-5 h-6 absolute -right-2 -bottom-3" />
-        </div>
+        <div className="relative inline-block">
+  <PopupButton
+    url="https://calendly.com/lutetebenedicte/30min"
+    rootElement={document.getElementById("root")}
+    text="Réserver votre appel gratuit"
+    className="relative z-10 bg-[#ED9B40] text-white px-3.5 py-1 rounded-2xl font-bold hover:bg-[#d9862e] transition font-newzen"
+  />
+
+  <img
+    src={star}
+    alt="etoile"
+    className="w-8 h-9 absolute -left-4 -top-3 pointer-events-none z-20"
+  />
+  <img
+    src={star}
+    alt="etoile"
+    className="w-5 h-6 absolute -right-2 -bottom-3 pointer-events-none z-20"
+  />
+</div>
+
+
 
         {/* <button 
           className="md:hidden text-[#ED9B40]" 
