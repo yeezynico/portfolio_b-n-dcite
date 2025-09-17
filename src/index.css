@@ -26,3 +26,7 @@
     font-family: 'New Zen', sans-serif;
   }
 }
+
+html {
+  scroll-behavior: smooth;
+}
