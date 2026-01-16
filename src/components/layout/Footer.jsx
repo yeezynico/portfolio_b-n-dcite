@@ -1,5 +1,5 @@
 import { PopupButton } from 'react-calendly'
-import logo from '../../assets/img/logo.png'
+import logo from '../../assets/img/Logo.svg'
 
 export const Footer = () => {
     return (

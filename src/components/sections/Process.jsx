@@ -1,25 +1,25 @@
 import React from 'react'
 import sun from '../../assets/img/soleil.png'
-import demisun from '../../assets/img/demi-soleil-creme.png'
-import sungroup from '../../assets/img/soleil group.png'
+// import demisun from '../../assets/img/demi-soleil-creme.png'
+// import sungroup from '../../assets/img/soleil group.png'
 import { PopupButton } from 'react-calendly'
 
 const Process = () => {
   return (
     <div id="process" className="bg-[#ED9B40] pt-10 w-full bg-cover bg-center relative overflow-hidden">
-      <div className="mt-5 text-white max-w-7xl mx-auto px-6 md:px-12">
+      <div className="mt-5 text-white max-w-7xl justify-center mx-auto">
         
         <div className="flex items-center justify-center md:justify-start gap-3 mb-10">
-          <img src={sun} alt="soleil" className="w-10 md:w-14" />
-          <h1 className="font-newzen font-bold text-white text-3xl md:text-5xl">Process</h1>
+          <img src={sun} alt="soleil" className="w-10 md:w-16" />
+          <h1 className="font-newzen font-bold text-white text-3xl md:text-6xl">Process</h1>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 place-items-start">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 ml-14 gap-10">
           {[
             {
               step: "1",
               title: "Prise de rendez-vous",
-              text: "Nous faisons connaissance et vous me présentez votre activité, votre univers ainsi que vos besoins. De mon côté, je m'assure d'être la bonne personne pour vous accompagner."
+              text: "Nous faisons connaissance et vous me présentez votre activité, votre univers ainsi que vos besoins. De mon côté, je m’assure d’être la bonne personne pour vous accompagner."
             },
             {
               step: "2",
@@ -34,7 +34,7 @@ const Process = () => {
             {
               step: "4",
               title: "Remise des fichiers",
-              text: "Je vous remets votre projet (et ses déclinaisons) dans tous les formats nécessaires (SVG, PNG, PDF vectoriel), accompagné de la palette de couleurs et des typographies."
+              text: "Je vous remets votre (et ses déclinaisons) dans tous les formats nécessaires (SVG, PNG, PDF vectoriel), accompagné de la palette de couleurs et des typographies."
             }
           ].map((item, index) => (
             <div key={index} className="flex flex-col items-start space-y-3 w-full">
@@ -45,7 +45,7 @@ const Process = () => {
                 </span>
               </div>
               <h2 className="font-bold text-white text-lg md:text-xl leading-tight">{item.title}</h2>
-              <p className="font-newzen font-medium text-white/95 text-sm leading-6 mb-5">
+              <p className="font-newzen font-medium text-white/95 text-sm leading-6 mb-5 w-30">
                 {item.text}
               </p>
             </div>
@@ -53,22 +53,17 @@ const Process = () => {
         </div>
 
         <div className="flex justify-center mt-10">
-          <PopupButton
+          {/* <PopupButton
               url="https://calendly.com/lutetebenedicte/30min"
               rootElement={document.getElementById("root")}
               text="Réserver votre appel gratuit"
-              className="bg-[#FFFFFF] text-[#ED9B40] px-6 py-3 rounded-2xl font-bold hover:bg-[#F6ECDF] transition font-newzen"
-          />
+              className="bg-[#FFFFFF] text-[#ED9B40] px-3.5 py-1 rounded-2xl font-bold hover:bg-[#F6ECDF] transition font-newzen"
+          /> */}
+          <button  className="bg-[#FFFFFF] text-[#ED9B40] px-3.5 py-1 mb-5 rounded-2xl font-bold hover:bg-[#F6ECDF] transition font-newzen">Réserver votre appel gratuit</button>
         </div>
 
-        <div className="flex justify-center mt-10">
-          <img src={sungroup} alt="groupement de soleils" className="w-full" />
         </div>
-      </div>
 
-      <div className="flex justify-center">
-        <img src={demisun} alt="soleil décoration" className="w-full max-h-[90vh] object-contain" />
-      </div>
     </div>
   )
 }
