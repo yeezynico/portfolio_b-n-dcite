@@ -15,8 +15,8 @@ const About = () => {
         className="w-full h-[613px] bg-cover bg-center flex flex-col items-center justify-center gap-10"
         style={{ backgroundImage: `url(${bgImage2})` }}
     >
-        <div className="bg-[#FEEEDB] rounded-4xl w-2/3 p-14 shadow-lg mr-72 -ml-24">
-            <h2 className="text-[#AA8F66] font-newzen font-bold text-5xl/15 ">
+        <div className="bg-[#FEEEDB] rounded-4xl w-2/3 p-14 shadow-lg mr-72 -ml-24 mt-20">
+            <h2 className="text-[#AA8F66] font-newzen font-bold text-5xl/15">
                 Ensemble donnons vie à votre marque grâce à un univers qui vous ressemble
             </h2>
         </div>
@@ -38,7 +38,7 @@ const About = () => {
 
         <div className="w-10/12 md:w-3/4 lg:w-2/3 xl:w-1/2 flex flex-col gap-6">
             <div className="flex justify-center">
-                <button className="bg-[#ED9B40] text-white px-3.5 py-1 rounded-2xl font-bold hover:bg-[#d9862e] transition font-newzen">
+                <button className="bg-[#ED9B40] text-white px-4 py-2 rounded-2xl text-2xl font-bold hover:bg-[#d9862e] transition font-newzen mb-20">
                     Réserver votre appel gratuit
                 </button>
                 {/* <PopupButton

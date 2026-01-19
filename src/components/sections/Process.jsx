@@ -59,7 +59,7 @@ const Process = () => {
               text="Réserver votre appel gratuit"
               className="bg-[#FFFFFF] text-[#ED9B40] px-3.5 py-1 rounded-2xl font-bold hover:bg-[#F6ECDF] transition font-newzen"
           /> */}
-          <button  className="bg-[#FFFFFF] text-[#ED9B40] px-3.5 py-1 mb-5 rounded-2xl font-bold hover:bg-[#F6ECDF] transition font-newzen">Réserver votre appel gratuit</button>
+          <button  className="bg-[#FFFFFF] text-[#ED9B40] hover:bg-[#F6ECDF] transition font-newzen px-4 py-2 rounded-2xl text-2xl font-bold mb-30">Prendre votre rendez-vous gratuitement</button>
         </div>
 
         </div>

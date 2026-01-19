@@ -5,10 +5,10 @@ import { PopupButton } from 'react-calendly'
 
 const Service = () => {
   return (
-    <div id="services" className="mb-20 px-6 md:px-12">
-      <div className="flex items-center justify-center md:justify-start mt-10 gap-3">
+    <div id="services" className="mb-20">
+      <div className="flex items-center justify-center md:justify-start mt-10 gap-3 pl-12">
         <img src={sun} alt="soleil" className="w-14 md:w-16" />
-        <h1 className="font-newzen font-bold text-[#ED9B40] text-3xl md:text-6xl">
+        <h1 className="font-newzen font-bold text-[#ED9B40] text-6xl">
           Services
         </h1>
       </div>
@@ -19,7 +19,7 @@ const Service = () => {
           <h2 className="text-[#AA8F66] font-newzen font-bold text-lg mt-3">
             Identité de marque
           </h2>
-          <p className="text-[#ED9B40] font-newzen font-medium text-lg mt-3 text-left w-40">
+          <p className="text-[#ED9B40] font-newzen font-medium text-xl mt-3 text-left w-40">
             Logos, identité visuelle, rebranding
           </p>
         </div>
