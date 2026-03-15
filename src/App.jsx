@@ -1,4 +1,4 @@
-// import { useState } from 'react'
+import { Routes, Route } from 'react-router-dom'
 import './index.css'
 import { Footer } from './components/layout/Footer'
 import { Header } from './components/layout/Header'
@@ -7,11 +7,14 @@ import Service from './components/sections/Service'
 import About from './components/sections/About'
 import Process from './components/sections/Process'
 import Testimony from './components/sections/Testimony'
+import Meeting from './components/sections/Meeting'
 
 function App() {
 
   return (
-      <div>
+    <Routes>
+      <Route path="/" element= {
+      <>
         <Header />
         <About />
         <Service />
@@ -19,7 +22,10 @@ function App() {
         <Portfolio />
         <Testimony />
         <Footer />
-      </div>
+      </>
+      }/>
+      <Route path="/meeting" element={<Meeting />}/>
+    </Routes>
   )
 }
 

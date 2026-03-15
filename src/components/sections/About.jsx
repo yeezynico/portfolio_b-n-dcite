@@ -4,9 +4,14 @@ import { PopupButton } from "react-calendly"
 import photo from '../../assets/img/DymensBeauty - Shoot 2-23 1.png'
 import bgImage from '../../assets/img/quadrillage.png'
 import bgImage2 from '../../assets/img/tache.png'
+import { useNavigate } from "react-router-dom";
+
 
 const About = () => {
+    const navigate = useNavigate();
+
   return (
+
     <div
     className="w-full h-[613px] bg-cover bg-center overflow-hidden"
     style={{ backgroundImage: `url(${bgImage})` }}
@@ -38,15 +43,10 @@ const About = () => {
 
         <div className="w-10/12 md:w-3/4 lg:w-2/3 xl:w-1/2 flex flex-col gap-6">
             <div className="flex justify-center">
-                <button className="bg-[#ED9B40] text-white px-4 py-2 rounded-2xl text-2xl font-bold hover:bg-[#d9862e] transition font-newzen mb-20">
+                <button className="bg-[#ED9B40] text-white px-4 py-2 rounded-2xl text-2xl font-bold hover:bg-[#d9862e] transition font-newzen mb-20"
+                onClick={() => navigate('/meeting')}>
                     Réserver votre appel gratuit
                 </button>
-                {/* <PopupButton
-                    url="https://calendly.com/lutetebenedicte/30min"
-                    rootElement={document.getElementById("root")}
-                    text="Réserver votre appel gratuit"
-                    className="bg-[#ED9B40] text-white rounded-2xl px-3.5 py-1 font-bold hover:bg-[#d9862e] transition font-newzen"
-                /> */}
             </div>
         </div>
     </div>

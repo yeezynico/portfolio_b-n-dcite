@@ -13,13 +13,13 @@ const Service = () => {
         </h1>
       </div>
 
-      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-10 my-16 mx-auto max-w-6xl">
-        <div className="flex flex-col  md:items-start p-6">
+      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-14 my-16 mx-auto max-w-6xl">
+        <div className="flex flex-col md:items-start p-6">
           <img src={semisun} alt="soleil" className="w-32 md:w-52 mb-4" />
-          <h2 className="text-[#AA8F66] font-newzen font-bold text-lg mt-3">
+          <h2 className="text-[#AA8F66] font-newzen font-bold text-xl mt-3">
             Identité de marque
           </h2>
-          <p className="text-[#ED9B40] font-newzen font-medium text-xl mt-3 text-left w-40">
+          <p className="text-[#ED9B40] font-newzen font-medium text-lg mt-3 text-left w-40">
             Logos, identité visuelle, rebranding
           </p>
         </div>
