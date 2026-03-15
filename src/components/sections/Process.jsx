@@ -14,7 +14,7 @@ const Process = () => {
           <h1 className="font-newzen font-bold text-white text-3xl md:text-6xl">Process</h1>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 ml-14 gap-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 ml-20 gap-6">
           {[
             {
               step: "1",
@@ -40,12 +40,12 @@ const Process = () => {
             <div key={index} className="flex flex-col items-start space-y-3 w-full">
               <div className="relative inline-flex items-center justify-center w-16 h-16 md:w-20 md:h-20">
                 <img src={sun} alt="soleil" className="w-full h-full" />
-                <span className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[#AA8F66] text-2xl md:text-4xl font-bold font-newzen">
+                <span className="absolute top-2/4 left-1/2 md:top-11 -translate-x-1/2 -translate-y-1/2 text-[#AA8F66] text-2xl md:text-4xl font-bold font-newzen">
                   {item.step}
                 </span>
               </div>
-              <h2 className="font-bold text-white text-lg md:text-xl leading-tight">{item.title}</h2>
-              <p className="font-newzen font-medium text-white/95 text-sm leading-6 mb-5 w-30">
+              <h2 className="font-bold text-white text-lg md:text-xl">{item.title}</h2>
+              <p className="font-newzen font-medium text-white/90 text-md leading-6 mb-5 w-34">
                 {item.text}
               </p>
             </div>
