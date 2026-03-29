@@ -57,7 +57,7 @@ export const Header = () => {
         </nav>
 
         {open && (
-          <div className="absolute top-full left-0 right-0 z-40 bg-[#ffffff] px-6 pt-10 pb-10 flex flex-col min-h-[65vh] rounded-b-[40px] shadow-lg md:hidden">
+          <div className="absolute top-full left-0 right-0 z-40 bg-[#ffffff] px-6 pt-10 pb-10 flex flex-col rounded-b-[40px] shadow-lg md:hidden">
             <div className="flex flex-col text-[#ED9B40] font-newzen font-bold text-2xl gap-16">
               <a href="#services" onClick={() => setOpen(false)}>
                 Services
@@ -70,7 +70,7 @@ export const Header = () => {
               </a>
             </div>
 
-            <div className="mt-auto flex justify-center">
+            <div className="mt-8 flex justify-center">
               <PopupButton
                 url="https://calendly.com/lutetebenedicte/30min"
                 rootElement={document.getElementById("root")}

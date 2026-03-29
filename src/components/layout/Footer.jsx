@@ -40,7 +40,7 @@ export const Footer = () => {
         </div>
       </div>
       <div className="mt-10 pt-6 border-t border-[#ED9B40]/30 text-center">
-        <p className="text-[#AA8F66] font-newzen text-sm md:text-base">
+        <p className="text-[#ED9B40] font-newzen text-sm md:text-base">
           © 2026 Béné. – Tous droits réservés
         </p>
       </div>

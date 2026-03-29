@@ -40,7 +40,7 @@ const Portfolio = () => {
 
         <div className="flex items-center gap-3 mb-10 pl-12">
           <img src={sun} alt="soleil" className="w-10 md:w-14" />
-          <h1 className="font-newzen font-bold text-3xl md:text-5xl">
+          <h1 className="font-newzen font-bold text-3xl md:text-4xl">
             Portfolio
           </h1>
         </div>

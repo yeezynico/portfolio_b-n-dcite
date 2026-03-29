@@ -11,7 +11,7 @@ const Process = () => {
       <div className="mt-5 text-white max-w-7xl justify-center mx-auto">
         <div className="flex items-center justify-center md:justify-start gap-3 mb-10">
           <img src={sun} alt="soleil" className="w-10 md:w-16" />
-          <h1 className="font-newzen font-bold text-white text-3xl md:text-6xl">
+          <h1 className="font-newzen font-bold text-white text-3xl md:text-4xl">
             Process
           </h1>
         </div>
@@ -70,8 +70,8 @@ const Process = () => {
               text="Réserver votre appel gratuit"
               className="bg-[#FFFFFF] text-[#ED9B40] px-3.5 py-1 rounded-2xl font-bold hover:bg-[#F6ECDF] transition font-newzen"
           /> */}
-
-          <button className="bg-[#FFFFFF] text-[#ED9B40] hover:bg-[#F6ECDF] transition font-newzen px-4 py-2 rounded-2xl text-2xl font-bold mb-30">
+{/* taile */}
+          <button className="bg-[#FFFFFF] text-[#ED9B40] hover:bg-[#F6ECDF] transition font-newzen px-4 py-2 rounded-2xl min-[500px]:text-2xl font-bold mb-30">
             Prendre votre rendez-vous gratuitement
           </button>
         </div>

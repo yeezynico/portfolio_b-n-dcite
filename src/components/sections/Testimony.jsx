@@ -5,12 +5,12 @@ const Testimony = () => {
   return (
     <section className="bg-[#f6ecdf6b] pb-20">
       <div>
-        <h1 className="font-newzen font-bold text-[#ED9B40] text-4xl md:text-6xl mb-16 pl-12 pt-18">
+        <h1 className="font-newzen font-bold text-[#ED9B40] text-4xl md:text-4xl mb-16 pl-12 pt-18">
           Ils parlent mieux que moi...
         </h1>
 
         <div className="max-md:px-[10%]">
-          <p className="font-newzen font-normal justify-self-center text-[#ED9B40] text-[40px] max-md:text-lg leading-snug max-w-6xl">
+          <p className="font-newzen font-normal justify-self-center text-[#ED9B40] text-[30px] max-md:text-lg leading-snug max-w-6xl">
             "Je voudrais remercier Bénédicte qui a répondu à toutes mes attentes
             ! Elle a été très efficace et disponible pour la création de mon
             site web ainsi que mon logo. Je vous la recommande les yeux fermés
@@ -18,7 +18,7 @@ const Testimony = () => {
           </p>
         </div>
 
-        <div className="flex items-center gap-6 pl-50 mt-20 max-md:pl-20">
+        <div className="flex items-center pl-50 mt-20 max-md:pl-20">
           <div className="relative w-36 h-36 top-3 max-[445px]:w-28 max-[445px]:h-28">
             <img
               src={demisun}
