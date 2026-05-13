@@ -61,11 +61,11 @@ const Service = () => {
 
       <div className="flex justify-center">
         <PopupButton
-          url="https://calendly.com/lutetebenedicte/30min"
-          rootElement={document.getElementById("root")}
-          text="Réserver votre appel gratuit"
-          className="bg-[#ED9B40] text-white px-4 py-2 rounded-2xl text-2xl font-bold hover:bg-[#d9862e] transition font-newzen"
-        />
+            url="https://calendly.com/benegraphistedesigner/30min"
+            rootElement={document.getElementById("root")}
+            text="Réservez votre appel gratuit"
+            className="bg-[#ED9B40] text-white px-3.5 py-1 rounded-xl text-xl font-bold hover:bg-[#d9862e] transition font-newzen"
+          />
       </div>
     </div>
   );

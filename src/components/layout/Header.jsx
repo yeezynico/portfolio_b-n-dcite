@@ -29,10 +29,10 @@ export const Header = () => {
 
           <div className="hidden md:relative md:inline-block">
             <PopupButton
-              url="https://calendly.com/lutetebenedicte/30min"
+              url="https://calendly.com/benegraphistedesigner/30min"
               rootElement={document.getElementById("root")}
-              text="Réserver votre appel gratuit"
-              className="relative z-10 bg-[#ED9B40] text-white text-[22px] px-3.5 py-1 rounded-2xl font-bold hover:bg-[#d9862e] transition font-newzen"
+              text="Prenez votre rendez-vous"
+              className="bg-[#ED9B40] text-white px-3.5 py-1 rounded-xl text-xl font-bold hover:bg-[#d9862e] transition font-newzen"
             />
 
             <img
@@ -72,10 +72,10 @@ export const Header = () => {
 
             <div className="mt-8 flex justify-center">
               <PopupButton
-                url="https://calendly.com/lutetebenedicte/30min"
+                url="https://calendly.com/benegraphistedesigner/30min"
                 rootElement={document.getElementById("root")}
                 text="Prenez votre rendez-vous"
-                className="bg-[#ED9B40] text-white px-6 py-3 rounded-2xl text-xl font-bold hover:bg-[#d9862e] transition font-newzen"
+                className="bg-[#ED9B40] text-white px-3.5 py-1 rounded-xl text-xl font-bold hover:bg-[#d9862e] transition font-newzen"
               />
             </div>
           </div>

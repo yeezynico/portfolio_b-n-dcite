@@ -64,16 +64,12 @@ const Process = () => {
         </div>
 
         <div className="flex justify-center mt-10">
-          {/* <PopupButton
-              url="https://calendly.com/lutetebenedicte/30min"
-              rootElement={document.getElementById("root")}
-              text="Réserver votre appel gratuit"
-              className="bg-[#FFFFFF] text-[#ED9B40] px-3.5 py-1 rounded-2xl font-bold hover:bg-[#F6ECDF] transition font-newzen"
-          /> */}
-{/* taile */}
-          <button className="bg-[#FFFFFF] text-[#ED9B40] hover:bg-[#F6ECDF] transition font-newzen px-4 py-2 rounded-2xl min-[500px]:text-2xl font-bold mb-30">
-            Prendre votre rendez-vous gratuitement
-          </button>
+          <PopupButton
+            url="https://calendly.com/benegraphistedesigner/30min"
+            rootElement={document.getElementById("root")}
+            text="Prenez votre rendez-vous gratuitement"
+            className="bg-[#FFFFFF] text-[#ED9B40] hover:bg-[#F6ECDF] transition font-newzen px-4 py-2 rounded-2xl min-[500px]:text-2xl font-bold mb-30"
+          />
         </div>
       </div>
     </div>

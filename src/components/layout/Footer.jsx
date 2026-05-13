@@ -32,7 +32,7 @@ export const Footer = () => {
 
         <div className="flex justify-center md:justify-start order-1 md:order-2 md:mt-8">
           <PopupButton
-            url="https://calendly.com/lutetebenedicte/30min"
+            url="https://calendly.com/benegraphistedesigner/30min"
             rootElement={document.getElementById("root")}
             text="Prenez votre rendez-vous"
             className="bg-[#ED9B40] text-white px-3.5 py-1 rounded-xl text-xl font-bold hover:bg-[#d9862e] transition font-newzen"

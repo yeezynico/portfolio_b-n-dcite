@@ -3,10 +3,9 @@ import sunny from "../../assets/img/soleil-orange.png";
 import photo from "../../assets/img/DymensBeauty - Shoot 2-23 1.png";
 import bgImage from "../../assets/img/quadrillage.png";
 import bgImage2 from "../../assets/img/tache.png";
-import { useNavigate } from "react-router-dom";
+import { PopupButton } from "react-calendly";
 
 const About = () => {
-  const navigate = useNavigate();
 
   return (
     <div
@@ -55,12 +54,12 @@ const About = () => {
 
         <div className="w-10/12 md:w-3/4 lg:w-2/3 xl:w-1/2 flex flex-col gap-6 max-md:w-[48%] max-md:self-start max-md:ml-[3%] max-[500px]:hidden">
           <div className="flex justify-center max-md:justify-start">
-            <button
-              className="bg-[#ED9B40] text-white rounded-2xl font-bold hover:bg-[#d9862e] transition font-newzen mb-20 text-xs px-2 py-1.5 min-[500px]:max-md:text-sm min-[501px]:max-md:px-3 min-[501px]:max-md:py-2  md:text-2xl md:px-4 md:py-2  max-md:mb-0"
-              onClick={() => navigate("/meeting")}
-            >
-              Réserver votre appel gratuit
-            </button>
+            <PopupButton
+              url="https://calendly.com/benegraphistedesigner/30min"
+              rootElement={document.getElementById("root")}
+              text="Réservez votre appel gratuit"
+              className="bg-[#ED9B40] text-white px-3.5 py-1 rounded-xl text-xl font-bold hover:bg-[#d9862e] transition font-newzen"
+            />
           </div>
         </div>
       </div>
@@ -73,12 +72,16 @@ const About = () => {
       
       <div className="min-[499px]:hidden mt-6">
         <div className="flex justify-center">
-          <button
+          {/* <button
             className="bg-[#ED9B40] text-white rounded-2xl font-bold hover:bg-[#d9862e] transition font-newzen mb-20 text-xs px-2 py-1.5 min-[500px]:max-md:text-sm min-[501px]:max-md:px-3 min-[501px]:max-md:py-2  md:text-2xl md:px-4 md:py-2  max-md:mb-0"
             onClick={() => navigate("/meeting")}
           >
             Réserver votre appel gratuit
-          </button>
+          </button> */}
+          {/* <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+<a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/benegraphistedesigner/30min'%7D);return false;">Planifier du temps avec moi</a>
+</link> */}
         </div>
       </div>
     </div>
